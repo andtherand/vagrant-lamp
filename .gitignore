@@ -1,6 +1,11 @@
 .DS_Store
+.vagrant
+Thumbs.db
+Desktop.ini
+
 *.sublime-*
 *.lock
-.vagrant
+*.box
+
 /data/vagrant/tmp
 /data/vagrant/cookbooks
