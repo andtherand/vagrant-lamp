@@ -1,0 +1,20 @@
+{
+    "name": "mysql",
+    "description": "installs and configures mysql server",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+        "mysql": {
+            "allow_remote_root": true,
+            "server_root_password": "root",
+            "server_repl_password": "xxx",
+            "server_debian_password": "xxx",
+            "bind_address": "0.0.0.0"
+        }
+    },
+
+    "run_list": [
+        "recipe[mysql::client]",
+        "recipe[mysql::server]"
+    ]
+}

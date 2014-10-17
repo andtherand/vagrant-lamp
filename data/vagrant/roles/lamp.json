@@ -1,0 +1,19 @@
+{
+    "name": "lamp",
+    "description": "installs and configures a lamp stack with some additional utils like git",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+
+    //
+    "run_list": [		
+        "role[tools]",
+        "role[mysql]",
+        "role[php]",
+        "recipe[php::module_mysql]",
+        "role[apache]",
+        "recipe[apache2::mod_php5]",
+        "recipe[xdebug]"
+    ]
+
+
+}

@@ -1,0 +1,24 @@
+{
+    "name": "myzsh",
+    "description": "configures a nicer console view with autocomplete and a nicer color scheme",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+
+    //
+    "default_attributes": {
+        "oh_my_zsh": {
+            "users": [{
+               "login": "vagrant",
+               "theme": "blinks",
+                "plugins": ["git"]
+            }]
+        }
+    },
+
+    //
+    "run_list": [
+        "recipe[oh-my-zsh-solo]"
+    ]
+
+
+}

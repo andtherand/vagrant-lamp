@@ -1,0 +1,15 @@
+{
+    "name": "php",
+    "description": "installs and configures php",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+	//
+	//
+    "run_list": [
+        "recipe[php]",
+        "recipe[php::module_curl]",
+        "recipe[php::module_gd]",
+        "recipe[php-intl]",
+        "recipe[composer]"
+    ]
+}

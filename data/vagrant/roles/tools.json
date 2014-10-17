@@ -1,0 +1,23 @@
+{
+    "name": "tools",
+    "description": "installs some basic tools that everyone needs at any time",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+
+    //
+    "default_attributes": {
+        "timezone": {
+            "value": "Europe/Berlin"
+        }
+    },
+
+    //
+    "run_list": [
+        "recipe[apt]",
+        "recipe[build-essential]",
+        "recipe[git]",
+        "recipe[timezone]",
+        "recipe[my-utils-packages]"
+    ]
+
+}

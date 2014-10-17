@@ -1,0 +1,6 @@
+.DS_Store
+*.sublime-*
+*.lock
+.vagrant
+/data/vagrant/tmp
+/data/vagrant/cookbooks

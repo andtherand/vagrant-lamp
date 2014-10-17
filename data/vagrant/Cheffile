@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'build-essential'
+cookbook 'timezone'
+#cookbook 'oh-my-zsh-solo'
+cookbook 'apt'
+cookbook 'xml'
+cookbook 'zlib'
+cookbook 'mysql'#, '~> 5.3.6'
+cookbook 'git'
+cookbook 'apache2'
+cookbook 'php'
+cookbook 'composer'
+
+cookbook "my-utils-packages",
+    :git => "https://github.com/mychiara/my-utils-packages"
+
+cookbook "xdebug"
+    :git => "https://github.com/mychiara/xdebug"

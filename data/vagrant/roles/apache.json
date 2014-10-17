@@ -1,0 +1,23 @@
+{
+    "name": "apache2",
+    "description": "installs and configures an apache2 webserver",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+
+    //
+    "default_attributes": {
+        "apache": {
+            "listen_ports": [80, 443],
+            "allow_override_default": "All"
+        }
+    },
+
+    //
+    "run_list": [
+        "recipe[apache2]",
+        "recipe[apache2::mod_rewrite]",
+        "recipe[apache2::mod_expires]"
+    ]
+
+
+}
