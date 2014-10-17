@@ -1,7 +1,7 @@
 Precise-LAMP
 ============
 
-A basic LAMP stack based on Ubunutu 14.04
+A basic LAMP stack based on Ubunutu 12.04
 
 Includes the basic LAMP Stack
 (Apache2, MySQL and PHP)
