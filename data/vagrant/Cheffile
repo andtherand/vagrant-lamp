@@ -18,5 +18,9 @@ cookbook 'composer'
 cookbook "my-utils-packages",
     :git => "https://github.com/mychiara/my-utils-packages"
 
-cookbook "xdebug"
-    :git => "https://github.com/mychiara/xdebug"
+cookbook "xdebug",
+    :git => "https://github.com/mychiara/xdebug",
+    :ref => "0.0.4"
+
+cookbook "php-intl",
+    :git => "https://github.com/mychiara/php-intl"
