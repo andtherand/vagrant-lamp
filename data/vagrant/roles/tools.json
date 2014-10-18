@@ -6,9 +6,7 @@
 
     //
     "default_attributes": {
-        "timezone": {
-            "value": "Europe/Berlin"
-        }
+        "tz": "Europe/Berlin"
     },
 
     //
