@@ -20,7 +20,7 @@ cookbook "my-utils-packages",
 
 cookbook "xdebug",
     :git => "https://github.com/mychiara/xdebug",
-    :ref => "0.0.4"
+    :ref => "0.0.7"
 
 cookbook "php-intl",
     :git => "https://github.com/mychiara/php-intl"
